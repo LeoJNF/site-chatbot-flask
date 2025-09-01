@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"P content="width=device-width, initial-scale=1.0">
+    <title>CatBot - Automação Inteligente para WhatsApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <a href="https://wa.me/1230197147?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20chatbot." class="cta-flutuante" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <section id="hero" class="d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Seu assistente virtual para atendimento automático no WhatsApp</h1>
+            <p class="lead my-4">Com nosso <strong>chatbot para WhatsApp</strong>, você automatiza o <strong>agendamento online</strong>, responde clientes e vende mais, 24h por dia.</p>
+            <a href="#demo" class="btn btn-success btn-lg mx-2">Faça um Teste Grátis</a>
+            <a href="#planos" class="btn btn-outline-light btn-lg mx-2">Ver Planos</a>
+        </div>
+    </section>
+
+    <section id="resultados-reais" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5">Resultados Reais que o CatBot Entrega</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-4">
+                        <i class="bi bi-graph-up-arrow text-success display-4 mb-3"></i>
+                        <h3 class="fs-1 fw-bold text-success">67%</h3>
+                        <p class="lead">Aumento médio nas vendas, transformando visitantes em clientes.</p>
+                        <small class="text-muted">(Fonte: Invespcro)</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-4">
+                        <i class="bi bi-headset text-primary display-4 mb-3"></i>
+                        <h3 class="fs-1 fw-bold text-primary">30%</h3>
+                        <p class="lead">Redução nos custos de atendimento ao cliente, otimizando sua operação.</p>
+                        <small class="text-muted">(Fonte: IBM)</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-4">
+                        <i class="bi bi-clock-history text-danger display-4 mb-3"></i>
+                        <h3 class="fs-1 fw-bold text-danger">24/7</h3>
+                        <p class="lead">Atendimento ininterrupto, garantindo que nenhum cliente fique sem resposta.</p>
+                        <small class="text-muted">(Fonte: Drift / Salesforce)</small>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-5">
+                <a href="#demo" class="btn btn-primary btn-lg">Veja o chatbot em ação</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+
+        <section id="casos-de-uso" class="py-5">
+            <h2 class="text-center mb-5">Perfeito para qualquer tipo de negócio</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-clipboard2-pulse-fill fs-1 text-primary"></i>
+                            <h5 class="card-title mt-3">Clínicas e Consultórios</h5>
+                            <p class="card-text">Agendamento e confirmação automática de consultas, liberando sua equipe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-egg-fried fs-1 text-danger"></i>
+                            <h5 class="card-title mt-3">Restaurantes e Bares</h5>
+                            <p class="card-text">Reservas de mesas, envio de cardápio e recebimento de pedidos para delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-briefcase-fill fs-1 text-secondary"></i>
+                            <h5 class="card-title mt-3">Escritórios e Serviços</h5>
+                            <p class="card-text">Pré-atendimento para filtrar as necessidades do cliente e direcionar ao setor certo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-cart-check-fill fs-1 text-success"></i>
+                            <h5 class="card-title mt-3">E-commerce</h5>
+                            <p class="card-text">Rastreio de pedidos, status de entrega e respostas para dúvidas frequentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="demo" class="py-5">
+            <h2 class="text-center mb-4">Veja como funciona na prática!</h2>
+            <p class="text-center mb-4">Interaja com nosso bot de agendamento aqui no site ou, se preferir, teste direto no seu celular.</p>
+            <div class="text-center mb-5">
+                 <a href="https://wa.me/1230197147?text=Olá!%20Quero%20testar%20o%20chatbot." class="btn btn-success btn-lg" target="_blank">
+                    <i class="bi bi-whatsapp"></i> Testar no WhatsApp Real
+                </a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="chat-widget-whatsapp">
+                        <div class="chat-header-whatsapp">
+
+                            <div class="contact-info">
+                                <strong>Clínica Sorriso Aberto</strong>
+                                <span>online</span>
+                            </div>
+                        </div>
+                        <div class="chat-body-whatsapp" id="chat-body"></div>
+                        <div class="chat-footer-whatsapp">
+                            <input type="text" id="user-input" class="form-control" placeholder="Digite sua mensagem...">
+                            <button id="send-btn" class="btn btn-primary">
+                                <i class="bi bi-send-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="py-5 bg-light">
+            <h2 class="text-center mb-5">Planos que se adaptam ao seu negócio</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card text-center h-100 shadow">
+                        <div class="card-header fs-4 fw-bold">Plano Essencial</div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">R$ 150<span class="text-muted fw-light">/mês</span></h3>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Múltiplos fluxos de conversa</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Integração com sistemas (agendas, etc.)</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Fluxo de conversa principal</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Agendamentos automáticos</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Suporte via e-mail</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Suporte prioritário via WhatsApp</li>
+                            </ul>
+                            <a href="https://wa.me/1230197147?text=Olá!%20Tenho%20interesse%20no%20Plano%20Essencial." class="btn btn-outline-primary w-100 mt-auto" target="_blank">Contratar Essencial</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card text-center h-100 shadow border-primary">
+                        <div class="card-header bg-primary text-white fs-4 fw-bold">Plano Profissional</div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">R$ 399<span class="text-muted fw-light">/mês</span></h3>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Múltiplos fluxos de conversa</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Integração com sistemas (agendas, etc.)</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 1500 conversas/mês</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Suporte prioritário via WhatsApp</li>
+                            </ul>
+                            <a href="https://wa.me/1230197147?text=Olá!%20Tenho%20interesse%20no%20Plano%20Profissional." class="btn btn-primary w-100 mt-auto" target="_blank">Contratar Profissional</a>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card text-center h-100 shadow">
+                        <div class="card-header fs-4 fw-bold">Sob Medida / Consultoria</div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Preço Sob Consulta</h3>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Diagnóstico completo do seu negócio</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Desenvolvimento de fluxo 100% personalizado</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Integrações complexas (CRM, ERP, etc.)</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Suporte e acompanhamento dedicado</li>
+                            </ul>
+                            <a href="https://wa.me/1230197147?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20para%20um%20projeto%20personalizado." class="btn btn-outline-primary w-100 mt-auto" target="_blank">Agendar Consultoria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted">Não tem certeza de qual plano escolher? <a href="https://wa.me/1230197147?text=Olá!%20Estou%20com%20dúvidas%20sobre%20os%20planos." target="_blank">Fale com um especialista</a>.</p>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold">Olá! Eu sou o Leandro Ferreira.</h2>
+                        <p class="lead text-primary">Especialista em Automação de Atendimento</p>
+                        <p>Percebi uma grande dificuldade em pequenas e médias empresas: a perda de clientes por falta de um atendimento rápido e eficiente. Muitas oportunidades eram desperdiçadas simplesmente pela demora em responder uma mensagem no WhatsApp.</p>
+                        <p>Foi por isso que criei o <strong>CatBot</strong>. Minha missão é usar a tecnologia para que negócios como o seu possam competir de igual para igual com grandes empresas, oferecendo um atendimento excepcional, 24 horas por dia, sem precisar aumentar a equipe.</p>
+                        <p>Vamos transformar juntos a maneira como você se comunica com seus clientes?</p>
+                        <a href="https://wa.me/55SEUNUMERO?text=Olá!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20chatbot." class="btn btn-primary" target="_blank">
+                            <i class="bi bi-whatsapp"></i> Fale Comigo no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="confianca" class="py-5">
+            <h2 class="text-center mb-5">Sua empresa em boas mãos</h2>
+            <div class="row align-items-center">
+               <!--  <div class="col-md-8">
+                    <h4>O que nossos clientes dizem:</h4>
+                    <blockquote class="blockquote">
+                        <p>"O chatbot otimizou nosso tempo em 80%. Agora, os agendamentos são feitos de forma automática e sem erros. Recomendo demais!"</p>
+                        <footer class="blockquote-footer">Dra. Ana, <cite title="Source Title">Clínica Sorriso Aberto</cite></footer>
+                    </blockquote>
+                </div>-->
+                <div style="text-align: center;">
+                    <i class="bi bi-shield-check fs-1 text-success"></i>
+                    <h5 class="mt-3">Segurança e Conformidade</h5>
+                    <p>Seus dados e os de seus clientes são protegidos com criptografia de ponta e em total conformidade com a LGPD.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-5 bg-light">
+            <h2 class="text-center mb-5">Tirando suas Dúvidas sobre nosso Atendimento Automático</h2>
+            <div class="accordion w-75 mx-auto" id="accordionFAQ">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Preciso instalar algum software no meu computador ou celular?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <strong>Não, absolutamente nada!</strong> Nossa solução de <strong>assistente virtual</strong> funciona 100% na nuvem. Você gerencia tudo por um painel online simples, sem precisar de instalação ou conhecimento técnico.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            O chatbot funciona em qualquer celular?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Sim! A conversa acontece diretamente no WhatsApp do seu cliente. Se o WhatsApp funciona no celular dele, nosso chatbot também funcionará, independentemente do modelo ou marca do aparelho (Android ou iPhone).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Funciona com meu número de WhatsApp atual?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Sim! Utilizamos a API oficial do WhatsApp Business, que permite conectar a automação ao seu número comercial existente, mantendo seu contato profissional.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            E se eu quiser mudar de plano depois?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Você tem total flexibilidade. É possível fazer o upgrade (para um plano maior) ou downgrade (para um plano menor) a qualquer momento, de acordo com a necessidade do seu negócio. O processo é simples e rápido.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                            O que acontece se o chatbot não souber a resposta?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Nosso sistema é configurado para transferir a conversa para um atendente humano sempre que encontrar uma pergunta complexa ou quando o cliente solicitar. O objetivo do <strong>atendimento automático</strong> é otimizar, não substituir completamente o toque humano quando ele é necessário.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 CatBot. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

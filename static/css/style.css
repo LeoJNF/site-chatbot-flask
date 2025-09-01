@@ -1,0 +1,291 @@
+/* 1. PALETA DE CORES DA MARCA */
+:root {
+    --cor-primaria: #00BFA6; /* Verde-água vibrante (Seu logo) */
+    --cor-secundaria: #FFC400; /* Amarelo ouro (Seu logo) */
+    --cor-dark: #2c3e50;      /* Um cinza-azulado escuro, mais moderno que preto */
+    --cor-light: #f8f9fa;     /* Cinza claro para fundos */
+
+    /* Cores WhatsApp para o chat de demonstração */
+    --whatsapp-bg-main: #e5ddd5;
+    --whatsapp-bubble-bot: #ffffff;
+    --whatsapp-bubble-user: #dcf8c6;
+    --whatsapp-header-bg: #00a884; /* Verde padrão do WhatsApp para o cabeçalho do chat */
+    --whatsapp-chat-time: #999;
+    --whatsapp-input-bg: #f0f2f5;
+    --whatsapp-input-border: #ccc;
+}
+
+/* 2. ATUALIZAÇÃO GERAL DOS ELEMENTOS DO SITE */
+body {
+    background-color: #fff !important;
+    color: var(--cor-dark); /* Texto geral do corpo */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-dark);
+}
+
+/* Links e botões com as novas cores da marca */
+.btn-primary {
+    background-color: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+    color: #fff !important; /* Garante texto branco */
+}
+.btn-primary:hover {
+    filter: brightness(90%);
+    color: #fff !important;
+}
+
+.btn-outline-primary {
+    color: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--cor-primaria) !important;
+    color: #fff !important;
+}
+
+.text-primary {
+    color: var(--cor-primaria) !important;
+}
+
+.bg-primary {
+    background-color: var(--cor-primaria) !important;
+    color: #fff !important; /* Garante texto branco em fundos primários */
+}
+
+.text-success { /* Usaremos o verde-água para "success" fora do chat */
+    color: var(--cor-primaria) !important;
+}
+.text-danger { /* Mantemos um vermelho padrão para perigo/alerta */
+    color: #e74c3c !important;
+}
+
+
+/* 3. ESTILOS DAS SEÇÕES ESPECÍFICAS DO SITE */
+
+/* Seção Herói com o Degradê */
+#hero {
+    min-height: 80vh;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff !important; /* Texto branco na hero */
+}
+#hero .btn-success { /* Botão "Teste Grátis" na Hero */
+    background-color: #fff !important;
+    color: var(--cor-primaria) !important;
+    font-weight: bold;
+    border-color: #fff !important;
+}
+#hero .btn-success:hover {
+    filter: brightness(90%);
+}
+
+/* Botão Flutuante de WhatsApp (mantém o verde oficial do WhatsApp) */
+.cta-flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.cta-flutuante:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Seção Resultados Reais (ícones e números) */
+#resultados-reais .card {
+    border: none; /* Remove borda do card */
+}
+#resultados-reais .text-success { color: var(--cor-primaria) !important; }
+#resultados-reais .text-primary { color: var(--cor-secundaria) !important; } /* Usando o amarelo para destaque */
+#resultados-reais .text-danger { color: #e74c3c !important; }
+
+/* Rodapé */
+footer.bg-dark {
+    background-color: var(--cor-dark) !important;
+    color: #fff !important;
+}
+
+/* Seção Sobre Mim */
+#foto-perfil {
+    max-width: 300px;
+    border: 5px solid var(--cor-light); /* Borda da foto agora usa cor light */
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+/* FAQ */
+.accordion-button:not(.collapsed) {
+    color: var(--cor-dark); /* Cor do texto do botão aberto */
+    background-color: var(--cor-light); /* Fundo do botão aberto */
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+.accordion-button:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 .25rem rgba(0, 191, 166, .25); /* Sombra do foco com cor primária */
+}
+
+
+/* 4. ESTILOS DO CHAT DE DEMONSTRAÇÃO (WhatsApp) */
+.chat-widget-whatsapp {
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid var(--whatsapp-input-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+}
+.chat-header-whatsapp {
+    background-color: var(--whatsapp-header-bg) !important; /* Verde padrão do WhatsApp */
+    color: white !important;
+    padding: 10px 15px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.chat-header-whatsapp .avatar {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    margin-right: 15px !important;
+    object-fit: cover !important;
+    background-color: #fff !important; /* Fundo do avatar para placeholder */
+}
+.chat-header-whatsapp .contact-info strong {
+    font-weight: bold !important;
+    color: white !important; /* Garante que o nome do contato seja branco */
+}
+.chat-header-whatsapp .contact-info span {
+    color: rgba(255, 255, 255, 0.8) !important; /* Cor mais clara para o status "online" */
+}
+
+.chat-body-whatsapp {
+    height: 500px !important;
+    padding: 20px !important;
+    overflow-y: auto !important;
+    background-color: var(--whatsapp-bg-main) !important;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png') !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Mensagens */
+.message {
+    display: flex !important;
+    margin-bottom: 5px !important;
+    max-width: 85% !important;
+    position: relative !important;
+    clear: both !important;
+}
+.message .message-content {
+    padding: 8px 12px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05) !important;
+    word-wrap: break-word !important;
+    position: relative; /* Necessário para os pseudo-elementos (bico) */
+}
+.message .message-content p {
+    margin: 0 !important;
+    line-height: 1.4 !important;
+    color: var(--cor-dark); /* Cor do texto nas mensagens */
+}
+
+/* Mensagem do Usuário (direita) */
+.message.user { align-self: flex-end !important; }
+.message.user .message-content {
+    background-color: var(--whatsapp-bubble-user) !important;
+    margin-right: 9px !important;
+}
+.message.user .message-content::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -8px !important; /* Posição do bico */
+    width: 10px !important;
+    height: 10px !important;
+    background: radial-gradient(circle at top right, transparent 0, transparent 8px, var(--whatsapp-bubble-user) 8px) !important;
+    pointer-events: none !important;
+}
+
+
+/* Mensagem do Bot (esquerda) */
+.message.bot { align-self: flex-start !important; }
+.message.bot .message-content {
+    background-color: var(--whatsapp-bubble-bot) !important;
+    margin-left: 9px !important;
+}
+.message.bot .message-content::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -8px !important; /* Posição do bico */
+    width: 10px !important;
+    height: 10px !important;
+    background: radial-gradient(circle at top left, transparent 0, transparent 8px, var(--whatsapp-bubble-bot) 8px) !important;
+    pointer-events: none !important;
+}
+
+
+.message-time {
+    font-size: 0.75em !important;
+    color: var(--whatsapp-chat-time) !important; /* Cor do timestamp */
+    float: right !important;
+    margin-left: 10px !important;
+    margin-top: 5px !important;
+}
+.message .message-content i.bi { /* Estilo para os ícones dentro das mensagens (como o 1, 2, 3) */
+    font-size: 1em !important; /* Tamanho normal */
+    vertical-align: middle; /* Alinha com o texto */
+    margin-right: 5px;
+    color: var(--cor-primaria); /* Cor dos ícones nas mensagens */
+}
+
+
+/* Rodapé do Chat */
+.chat-footer-whatsapp {
+    display: flex !important;
+    padding: 10px !important;
+    background-color: var(--whatsapp-input-bg) !important;
+    align-items: center !important;
+}
+.chat-footer-whatsapp input {
+    flex-grow: 1 !important;
+    border-radius: 20px !important;
+    border: 1px solid var(--whatsapp-input-border) !important; /* Borda do input */
+    padding: 8px 15px !important;
+    background-color: #fff !important;
+    color: var(--cor-dark); /* Cor do texto digitado */
+}
+.chat-footer-whatsapp button {
+    margin-left: 10px !important;
+    border-radius: 50% !important;
+    width: 45px !important;
+    height: 45px !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: var(--cor-primaria) !important;
+    color: #fff !important;
+}
+.chat-footer-whatsapp button i {
+    font-size: 1.2rem !important;
+    color: #fff !important;
+}
